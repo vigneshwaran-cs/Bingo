@@ -1,0 +1,17 @@
+<apex:page standardController="Points__c" >
+    <div style="text-align:center;font-size: 25px;">
+                <h1>Ideas!!</h1>
+    </div>
+ 
+  <apex:form >
+  <apex:pageBlock >
+  <apex:pageBlockSection >
+     <apex:inputTextarea value="{!Points__c.Idea__c}"/>
+  </apex:pageBlockSection>
+  
+  </apex:pageBlock>
+         <div style="text-align:center;font-size: 10px;">
+        <apex:commandButton value="Post" action="{!Save}"/>
+        </div>        
+  </apex:form>
+</apex:page>

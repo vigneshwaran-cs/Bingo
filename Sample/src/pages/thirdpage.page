@@ -1,0 +1,21 @@
+<apex:page standardController="Account" showHeader="false" sidebar="false" extensions="simplewizard">
+  <apex:form >
+  <Apex:pageBlock >
+    <apex:pageMessages id="showmsg"></apex:pageMessages>
+    <apex:pageBlockSection title="Additional Details">
+            <apex:inputField value="{!acct.Active__c}" />
+            <apex:inputField value="{!acct.NumberofLocations__c}" />
+            <apex:inputField value="{!acct.CustomerPriority__c}" />
+            <apex:inputField value="{!acct.SLA__c}" />
+            <apex:inputField value="{!acct.UpsellOpportunity__c}" />
+                
+    </apex:pageBlockSection>  
+    
+     <apex:commandButton action="{!tSave}" value="Save" />
+          
+          
+    
+    
+   </Apex:pageBlock>
+   </apex:form>
+</apex:page>

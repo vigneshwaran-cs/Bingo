@@ -1,0 +1,29 @@
+<apex:page standardController="Account" showHeader="false" sidebar="false" extensions="simplewizard">
+   <apex:form >
+  <Apex:pageBlock >
+   <apex:pageMessages id="showmsg"></apex:pageMessages>
+    <apex:pageBlockSection title="Address">
+    
+            <apex:inputField value="{!acct.BillingStreet}" />
+            <apex:inputField value="{!acct.BillingCity}" />
+            <apex:inputField value="{!acct.BillingState}" />
+            <apex:inputField value="{!acct.BillingCountry}" />
+            <apex:inputField value="{!acct.BillingPostalCode}" />
+
+            <apex:inputField value="{!acct.ShippingStreet}" />
+            <apex:inputField value="{!acct.ShippingCity}" />
+            <apex:inputField value="{!acct.ShippingState}" />
+            <apex:inputField value="{!acct.ShippingCountry}" />
+            <apex:inputField value="{!acct.ShippingPostalCode}" />
+
+
+    
+
+    </apex:pageBlockSection>  
+     
+   <apex:pageBlockButtons >
+   <apex:commandButton action="{!ToPage3}" value="Continue" />
+   </apex:pageBlockButtons>
+   </Apex:pageBlock>
+     </apex:form>
+</apex:page>

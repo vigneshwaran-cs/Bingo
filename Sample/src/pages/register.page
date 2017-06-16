@@ -1,0 +1,37 @@
+<apex:page standardController="Client__c" tabStyle="Client__c" >
+  <center>
+    <apex:panelGrid bgcolor="grey" columns="1">    
+            
+          <apex:panelGrid width="256" cellpadding="0" cellspacing="0" bgcolor="white" columns="2"> 
+            <apex:outputPanel layout="block" styleClass="topPanel">     
+             <apex:form >
+     
+              <apex:panelGrid columns="1" style="margin-top:1em;">
+         
+             <br>FirstName</br>
+             <apex:inputText value="{!Client__c.FirstName__c}" required="true"/>
+                 
+             <br>LastName</br>
+             <apex:inputText value="{!Client__c.LastName__c}" required="true"/>
+                 
+             <br>Email</br>
+             <apex:inputText value="{!Client__c.Email__c}" required="true"/>
+            
+             <br>ProjectName</br>
+             <apex:inputText value="{!Client__c.Project_Name__c}" required="true"/>
+         
+             <br>ApplicationName</br>
+             <apex:inputText value="{!Client__c.ApplicationName__c}" required="true"/>
+      
+             <center>
+             <apex:commandButton value="Register" action="{!Save}"/>  
+             </center>  
+             
+             </apex:panelGrid> 
+              </apex:form>  
+            </apex:outputpanel> 
+        </apex:panelGrid> 
+       </apex:panelGrid>        
+   
+  </center>
+</apex:page>

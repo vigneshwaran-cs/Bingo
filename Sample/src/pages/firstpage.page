@@ -1,0 +1,21 @@
+<apex:page standardController="Account"  extensions="simplewizard">
+  
+    <apex:form >
+    <Apex:pageBlock >
+    <apex:pageMessages id="showmsg"></apex:pageMessages>
+    <apex:pageBlockSection title="Personal Details">
+    
+    <apex:inputFIeld value="{!acct.AccountNumber}"/>
+    <apex:inputField value="{!acct.Name}"/>
+    <apex:inputField value="{!acct.Ownership}"/>
+    <apex:inputField value="{!acct.Type}"/>
+    <apex:inputField value="{!acct.Phone}"/>
+    </apex:pageBlockSection>
+   <apex:pageBlockButtons >
+   <apex:commandButton action="{!ToPage2}" value="Continue" />
+   </apex:pageBlockButtons>
+    </Apex:pageBlock>
+   
+       </apex:form>
+       
+</apex:page>
